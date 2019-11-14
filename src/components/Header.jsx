@@ -18,6 +18,18 @@ const useStyles = makeStyles(theme => ({
   bio: {
     marginLeft: 'auto',
     marginRight: -12,
+    fontFamily: 'Bebas Neue',
+    fontSize: 30
+  },
+  aboutUs: {
+    fontFamily: 'Bebas Neue',
+    fontSize: 30
+  },
+  stonks: {
+    marginLeft: 'auto',
+    marginRight: 150,
+    fontFamily: 'Bebas Neue',
+    fontSize: 30
   }
 }));
 
@@ -27,7 +39,8 @@ function Header(){
     <div className={classes.root}>
       <AppBar position="fixed" color="secondary">
         <Toolbar>
-          <Button href="#">ABOUT US</Button>
+          <Button className={classes.aboutUs}href="#">ABOUT US</Button>
+          <Button href="#" className={classes.stonks}>STONKS on STONKS</Button>
           <Button href="#bio" className={classes.bio}>BIO</Button>
         </Toolbar>
       </AppBar>
